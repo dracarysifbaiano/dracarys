@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrant", sans-serif;
+    text-decoration: none;
+}
+body, html{
+    height: 100%;
+    background-color: #017CFD;
+    max-height: 1000px;
+}
+.back{
+    background-color: #FAFAFA;
+    width: 50%;
+    height: 100vh;
+    max-height: 1000px;
+}
+.img_voltar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+}
+.login{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    width: 30%;
+    height: 100vh;
+    background: transparent;
+    margin: 0 auto;
+}
+
+.login_tamanho{
+    position: relative;
+    margin: 0 auto;
+    width: 97%;
+    height: 100%;
+    border-radius: 15px;
+    background: #F3F3FB;
+    overflow: hidden;
+}
+.login_tamanho .efeito::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent; 
+    border-top: 100px solid #5660F1; 
+    display: block;
+    z-index: 1;
+    opacity: .8;
+
+}
+.login_tamanho .efeito::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0; 
+    height: 0; 
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent; 
+    border-top: 150px solid #57ccf2; 
+    display: block;
+
+}
+.login_tamanho h2{
+    text-align: left;
+    text-indent: 30px;
+    color: #5c4c96;
+    opacity: .7;
+    margin-top: 30%;
+}
+fieldset{
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-color: #ffffff;
+    height: auto;
+    padding-bottom: 10px;
+    border: 2px solid #57ccf2;
+} 
+legend{
+    color: #57ccf2;
+    margin-left: 20px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.login_tamanho input, select{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background-color: #ffffff;
+    border-radius: 25px;
+    font-size: 17pt;
+    padding: 0 10px;
+}
+.login_tamanho input::placeholder{
+    font-size: 17pt;
+    color: #cecece;
+}
+
+.feddgf{
+    color: #000000;
+}
+.evrerv{
+    color: #cecece!important;
+}
+option:nth-of-type(1){
+    display: none;
+    color: #cecece;
+}
+option{
+    color: #000000;
+}
+.login_tamanho input[type="submit"]{
+    font-size: 21px;
+    width: 85%;
+    height: 45px;
+    background: linear-gradient(to left, #57ccf2, #5660F1);
+    color: #ffffff;
+    cursor: pointer;
+}
+.rs{
+    text-align: center;
+    margin-top: 10px;
+    line-height: 40px;
+    color: #5c4c96;
+}
+.rsf,.rsg{
+    margin: 10px auto!important;
+}
+.outro_documento{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.outro_documento p a:hover{
+    text-decoration: underline;
+    color: #252525;
+}
+.outro_documento p{
+    text-align: center;
+}
+.outro_documento p a{
+    color: #6d6c6c;
+    font-size: 11pt;
+}
+.alerta{
+    position: absolute;
+    display: inline-block;
+    z-index: 1000;
+    background: linear-gradient(to bottom right, #fd4400 ,#ff8c4a);
+    border-radius: 2px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    padding-right: 10px;
+}
+.alerta img{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.caregando{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: #ffffff;
+    padding-right: 10px;
+    box-sizing: content-box;
+}
+.pocen{
+    width: 0;
+    height: 100%;
+    background: #5c4c96;
+    transition: none;
+    box-sizing: content-box;
+}
+
+  .ddddd{
+    width: 100%;
+    transition: width 10s;
+    padding-right: 10px;
+  }
+
+@media screen and (min-width: 1000px){
+.alerta{
+    top: 20px;
+    right: 15px;
+    width: 220px;
+    height: 55px;
+}
+}
+@media screen and (max-width: 800px){
+    .alerta{
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: 65px;
+    }
+    }
+    
+@media screen and (max-width: 800px), (max-height: 450px) {
+.login{
+    width: 100%;
+}
+.login_tamanho .efeito::before{
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent; 
+    border-top: 75px solid #5660F1; 
+}
+.login_tamanho .efeito::after{
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent; 
+    border-top: 100px solid #57ccf2; 
+}
+}
+@media screen and (max-height: 600px) {
+    .login{
+       height: 600px;
+}
+.back{
+    height: 600px;
+}
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .login{
+        width: 60%;
+    }
+}
+.none{
+    display: none;
+}
